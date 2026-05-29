@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub Profile Search</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+<div class="container">
+
+    <div class="logo">
+    <i class="fa-brands fa-github"></i>
+    <h1>GitHub Profile Finder</h1>
+</div>
+
+    <div class="search-box">
+        <input type="text" id="username" placeholder="Enter GitHub Username">
+        <button onclick="searchUser()">Search</button>
+    </div>
+
+    <div class="error" id="error"></div>
+
+    <div class="card" id="card">
+
+        <img id="avatar" class="profile-img">
+
+        <h1 class="name" id="name"></h1>
+
+        <p class="username" id="login"></p>
+
+        <p class="bio" id="bio"></p>
+
+        <div class="stats">
+
+            <div class="box">
+                <div class="number" id="followers"></div>
+                <div class="text">Followers</div>
+            </div>
+
+            <div class="box">
+                <div class="number" id="following"></div>
+                <div class="text">Following</div>
+            </div>
+
+            <div class="box">
+                <div class="number" id="repos"></div>
+                <div class="text">Repos</div>
+            </div>
+
+        </div>
+
+        <a id="profileLink" class="profile-btn" target="_blank">
+            View Profile
+        </a>
+
+    </div>
+
+</div>
+<script src="style.js"></script>
+</body>
+</html>

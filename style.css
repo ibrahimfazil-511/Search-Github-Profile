@@ -1,0 +1,156 @@
+.logo{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    color:white;
+    margin-bottom:25px;
+}
+
+.logo i{
+    font-size:40px;
+    color:#3b82f6;
+}
+
+.logo h1{
+    font-size:28px;
+    font-weight:600;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#e7e9ee,#1e293b,#334155);
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:400px;
+}
+
+.search-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:25px;
+}
+
+.search-box input{
+    flex:1;
+    padding:15px;
+    border:none;
+    outline:none;
+    border-radius:15px;
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(10px);
+    color:white;
+    font-size:15px;
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.search-box input::placeholder{
+    color:#cbd5e1;
+}
+
+.search-box button{
+    padding:15px 20px;
+    border:none;
+    border-radius:15px;
+    background:#3b82f6;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.search-box button:hover{
+    background:#2563eb;
+    transform:scale(1.05);
+}
+
+.card{
+    background:rgba(255,255,255,0.1);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:25px;
+    padding:30px;
+    text-align:center;
+    color:white;
+    box-shadow:0 10px 40px rgba(0,0,0,0.4);
+    display:none;
+}
+
+.profile-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    border:4px solid white;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.name{
+    font-size:28px;
+    font-weight:600;
+}
+
+.username{
+    color:#cbd5e1;
+    margin-top:5px;
+}
+
+.bio{
+    margin-top:15px;
+    line-height:24px;
+    color:#e2e8f0;
+}
+
+.stats{
+    display:flex;
+    justify-content:space-between;
+    gap:10px;
+    margin-top:25px;
+}
+
+.box{
+    flex:1;
+    background:rgba(255,255,255,0.12);
+    padding:15px;
+    border-radius:18px;
+}
+
+.number{
+    font-size:22px;
+    font-weight:bold;
+}
+
+.text{
+    font-size:13px;
+    color:#cbd5e1;
+    margin-top:5px;
+}
+
+.profile-btn{
+    display:inline-block;
+    margin-top:25px;
+    text-decoration:none;
+    color:white;
+    background:#3b82f6;
+    padding:12px 25px;
+    border-radius:30px;
+}
+
+.error{
+    color:white;
+    text-align:center;
+    margin-top:10px;
+}
